@@ -41,9 +41,13 @@ header{
 }
 /* main */
 main{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 12%;
     align-items: center;
     flex-wrap: wrap;
-
+    height: 100vh;
+    justify-content: space-between;
 }
 
 #videoRanger{
@@ -55,11 +59,32 @@ main{
 }
 .carrosAmostra{
     display: flex;
-    border:  solid black 1px;
-    
+    justify-content: space-between;
+    width: 100%;
 }
-#Carro
+#CarroVenda{
+    border:  solid black 2px;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
 
+}
+#Descricao{
+    display: flex;
+    align-items: center;
+}
+h4{
+    color: rgb(16, 16, 232);
+}
+#CompararPreço{
+    border:solid rgb(16, 16, 232);
+    border-radius: 8%;
+    background-color: rgb(16, 16, 232);
+    color: white;
+    padding:1em;
+}
 /* footer */
 footer{
     background-color: rgb(16, 16, 232);
