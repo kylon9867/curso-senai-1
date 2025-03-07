@@ -33,7 +33,7 @@ header{
     font-size: 140%;
     text-decoration: none;
     gap: 5%;
-    color: blue;
+    color: #1b357e;
     flex-wrap: wrap;
     justify-content: center;
     flex: 1;
@@ -72,11 +72,13 @@ main{
 float: left;
 max-width: 70%;
 text-align: center;
+color: #1b357e;
 }
 #textoDaFord{
      font-size: 90%;
      flex-grow: 1;
      overflow-wrap:break-word;
+     color: #1b357e;
 }
 #infoCarro{
     font-size: 90%;
