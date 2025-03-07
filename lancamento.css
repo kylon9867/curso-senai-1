@@ -10,6 +10,7 @@ body{
     justify-content: center;
     width: 100vw;
     min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
 }
 
 header{
@@ -19,8 +20,8 @@ header{
     flex-wrap: wrap;
     align-items: center; 
     background-color: white;
-    box-shadow: black 0px 0px 10px;    
-    color: rgb(19, 81, 216);
+    box-shadow: #1b357e 0px 0px 10px;    
+    color: #1b357e;
 }
 
 #logoFord1{
@@ -37,26 +38,20 @@ header{
     align-items: center;
 
 }
-.lancamento{
-    border-top: 5px #1b357e solid;
-    border-radius: 20px;
-}
-.home:hover ~ .lancamento, .contato:hover ~ .lancamento{
-    border-color: transparent;
-}
-.home:hover{
-    border-top: 5px solid #1b357e;
-    border-radius: 20px;
-}
-.contato:hover{
-    border-top: 5px solid #1b357e;
-    border-radius: 20px;
+
+#lancamento{
+    border-top: 2px #1b357e solid;
+    pointer-events: none;
 }
 
-.itensMenu:hover{
+#home:hover{
     transition: 0s;
-    border-top: 5px #1b357e solid ;
-    border-radius: 20px;
+    border-top: 2px solid #1b357e;
+}
+
+#contato:hover{
+    transition: 0s;
+    border-top: 2px solid #1b357e;
 }
 
 #juncao{
@@ -64,6 +59,7 @@ header{
 }
 
 /* main */
+
 main{
     flex: 1;
     display: flex;
@@ -72,14 +68,12 @@ main{
     height: 100vh;
     justify-content: center;
 }
+
 #secao_video{
     border: none;
     margin: 0;
     width: 100%;
     height: 20vw;
-}
-#imagens_e_Texto{
-    width: 100%;    
 }
 
 #videoRanger{
@@ -87,6 +81,10 @@ main{
     margin: 0;
     width: 100%;
     height: 100%;
+}
+
+#imagens_e_Texto{
+    width: 100%;    
 }
 
 .carrosAmostra{
@@ -104,30 +102,36 @@ main{
     flex-direction: column;
 }
 
-#Descricao{
+.fotos_Carros{
+    width: 80%;
+}
+
+.Descricao{
     color:rgb(19, 81, 216);
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 h4{
      color: rgb(16, 16, 232);
 }
 
+.caixaPerguntaCarros{
+   transform: scale(1.5);
+}
 #CompararPreço{
     border:solid rgb(16, 16, 232);
     border-radius: 8%;
     background-color: rgb(16, 16, 232);
     color: white;
     padding:1em;
+    
 }
 
-.caixaPergunta{
-    background-color: blue;
-}
-
-.fotos_Carros{
-    width: 80%;
+#botão_Submit{
+    height: 0;
 }
 
 /* footer */
@@ -137,6 +141,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    color: white;
 }
 
 .redesSociais{

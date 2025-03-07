@@ -5,58 +5,72 @@
     <link rel="stylesheet" href="lancamento.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Lançamentos</title>
 </head>
 
 <body>
     <header>
         <img src="anexo_desafio_htmlcss/img/logo-ford-256.png" alt="logo da ford" id="logoFord1">
         <nav class="menu">
-            <a href="index.html" class="home">Home</a>
-            <a href="lançamento.html" class="lancamento">Lançamento</a>
-            <a href="contato.html" class="contato">Contato</a>
+            <a href="index.html" id="home">Home</a>
+            <a href="lançamento.html" id="lancamento">Lançamento</a>
+            <a href="contato.html" id="contato">Contato</a>
         </nav>
         <div id="juncao"></div>
     </header>
     <main>
-            <section id="secao_video">
-        <iframe id="videoRanger" src="https://www.youtube.com/embed/vQsryuNmsL0?autoplay=1&mute=1&showinfo=0&controls=0&loop=1&playlist=vQsryuNmsL0" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-            </section>
-            <section id="imagens_e_Texto">
-        <div class="carrosAmostra">
-            <div id="CarroVenda">
-                <img src="anexo_desafio_htmlcss/img/storm.jpg" alt="Ford Ranger Storm" class="fotos_Carros">
-                <div id="Descricao">
-                    <input type="checkbox" name="CaixaPerguntaCarros">
-                    <h4>Ford Ranger Storm</h4>
-                    <img src="anexo_desafio_htmlcss/img/info.png" alt="informações" >
-                </div>
-                    <!-- <label for="CompararPreço">161.690,00</label> -->
-            </div>
-            <div id="CarroVenda">
-                <img src="anexo_desafio_htmlcss/img/XL Cabine.jpg" alt="Ford Ranger XL Cabine" class="fotos_Carros">
-                <div id="Descricao">
-                <input type="checkbox" name="CaixaPerguntaCarros">
-                <h4>Ford Ranger XL Cabine</h4>
-                <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
-            </div>
-
-                
-                <!-- <label for="CompararPreço">168.536,00</label> -->
-            </div>
-            <div id="CarroVenda">
-                <img src="anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt="Ford Ranger xls 2.2 diesel" class="fotos_Carros">
-                <div id="Descricao">
-                <input type="checkbox" name="CaixaPerguntaCarros">
-                <h4>Ford Ranger XLS</h4>
-                <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
-                <!-- <label for="CompararPreço">168.900,00</label> -->
-                </div>
-            </div>
-        </div>
+        <section id="secao_video">
+            <iframe id="videoRanger"
+                src="https://www.youtube.com/embed/vQsryuNmsL0?autoplay=1&mute=1&showinfo=0&controls=0&loop=1&playlist=vQsryuNmsL0"
+                frameborder="0" allow="autoplay" allowfullscreen></iframe>
         </section>
-        <div style="margin-top: auto;">
-            <button id="CompararPreço">Comparar Preço</button>
+        <section id="imagens_e_Texto">
+            <div class="carrosAmostra">
+                <div class="CarroVenda">
+                    <img src="anexo_desafio_htmlcss/img/XL Cabine.jpg" alt="Ford Ranger XL Cabine" class="fotos_Carros">
+                    <div class="Descricao">
+                        <input type="checkbox" name="CaixaPerguntaCarros" class="caixaPerguntaCarros">
+                        <div>
+                            <h4>Ford Ranger XL Cabine</h4>
+                            <label for="CompararPreço">R$ 252.9000,00</label>
+                        </div>
+                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
+                    </div>
+                </div>
+
+                <div id="CarroVenda">
+                    <img src="anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt="Ford Ranger xls 2.2 diesel"
+                        class="fotos_Carros">
+                    <div class="Descricao">
+                        <input type="checkbox" name="CaixaPerguntaCarros" class="caixaPerguntaCarros">
+                        <div>
+                            <h4>Ford Ranger XLS</h4>
+                            <label for="CompararPreço">R$ 279.900,00</label>
+                        </div>
+                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
+                    </div>
+                    
+                </div>
+                <div id="CarroVenda">
+                    <img src="anexo_desafio_htmlcss/img/storm.jpg" alt="Ford Ranger Storm" class="fotos_Carros">
+                    <div class="Descricao">
+                        <input type="checkbox" name="CaixaPerguntaCarros" class="caixaPerguntaCarros">
+                        <div>
+                            <h4>Ford Ranger Storm</h4>
+                            <label for="CompararPreço">R$ 229.900,00</label>
+                        </div>
+                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div id="botão_Submit">
+            <input type="submit" id="CompararPreço" value="Comparar Preços">
         </div>
     </main>
     <footer>

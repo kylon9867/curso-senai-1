@@ -8,11 +8,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* header */
 header{
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid  #1b357e; 
     width: 100%;  
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +21,8 @@ header{
     top: 0%;
     position: fixed;
     background-color: white;
-    box-shadow: black 0px 0px 10px;
+    box-shadow:  #1b357e 0px 0px 10px;
+    color: #1b357e;
 }
 #logoFord1{
     width: 10%;
@@ -36,6 +38,20 @@ header{
     justify-content: center;
     flex: 1;
 
+}
+#home{
+    border-top: 2px solid #1b357e;
+    pointer-events: none;
+}
+
+#lancamento:hover{
+    transition: 0s;
+    border-top: 2px solid #1b357e;
+}
+
+#contato:hover{
+    transition: 0s;
+    border-top: 2px solid #1b357e;
 }
 #juncao{
     width: 10%;
@@ -67,13 +83,14 @@ text-align: center;
 }
 /* footer */
 footer{
-    background-color: rgb(16, 16, 232);
+    background-color: #1b357e;
     display: flex;
     align-items: center;
     justify-content: space-between;
     bottom: 0%;
     position: fixed;
     width: 100%;
+    color: white;
 }
 
 .redesSociais{
