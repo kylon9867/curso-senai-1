@@ -80,7 +80,12 @@ footer{
     display: flex;
     align-items: center;
 }
-@media (max-width: 800px) {
-
+@media screen and (max-width: 800px) {
+#separacao{
+    width: 100%;
+}
+main{ 
+    flex-direction: column;
+}
     
 }
