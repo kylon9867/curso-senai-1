@@ -2,4 +2,41 @@
     padding: 0%;
     margin: 0%;
 }
-body
+body{}
+
+.btn-loading {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color:  #1b357e;
+    background-color: #fff;
+    border: 2px solid  #1b357e;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-loading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:  #1b357e;
+    color: ;
+    transition: width 0.4s ease;
+    z-index: 0;
+}
+
+.btn-loading:hover::before {
+    width: 100%;
+}
+
+.btn-loading span {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
