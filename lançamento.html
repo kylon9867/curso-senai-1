@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <link rel="stylesheet" href="lancamento.css">
@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="anexo_desafio_htmlcss/img/ford-96.png">
     <title>Lançamentos</title>
 </head>
 
@@ -35,56 +36,70 @@
                     <div class="Descricao">
                         <input type="checkbox" name="CaixaPerguntaCarros" class="caixaPerguntaCarros">
                         <div>
-                            <h4>Ford Ranger XL Cabine</h4>
-                            <label for="CompararPreço">R$ 252.9000,00</label>
+                        <h4>Ford Ranger XL Cabine</h4>
+                        <label>R$ 252.900,00</label>
                         </div>
-                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
+                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações" class="info-icon">
+                        <div class="info-box">
+                            <table>
+                                <tr><th>Motor</th><td>2.2 Diesel</td></tr>
+                                <tr><th>Potência</th><td>160 cv</td></tr>
+                                <tr><th>Consumo</th><td>10 km/l</td></tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
-
-                <div id="CarroVenda">
-                    <img src="anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt="Ford Ranger xls 2.2 diesel"
-                        class="fotos_Carros">
+                <div class="CarroVenda">
+                    <img src="anexo_desafio_htmlcss/img/xls 2.2 diesel.jpg" alt="Ford Ranger XLS" class="fotos_Carros">
                     <div class="Descricao">
                         <input type="checkbox" name="CaixaPerguntaCarros" class="caixaPerguntaCarros">
                         <div>
-                            <h4>Ford Ranger XLS</h4>
-                            <label for="CompararPreço">R$ 279.900,00</label>
+                        <h4>Ford Ranger XLS</h4>
+                        <label>R$ 279.900,00</label>
                         </div>
-                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
+                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações" class="info-icon">
+                        <div class="info-box">
+                            <table>
+                                <tr><th>Motor</th><td>3.2 Diesel</td></tr>
+                                <tr><th>Potência</th><td>200 cv</td></tr>
+                                <tr><th>Consumo</th><td>9 km/l</td></tr>
+                            </table>
+                        </div>
                     </div>
-                    
                 </div>
-                <div id="CarroVenda">
+                <div class="CarroVenda">
                     <img src="anexo_desafio_htmlcss/img/storm.jpg" alt="Ford Ranger Storm" class="fotos_Carros">
                     <div class="Descricao">
                         <input type="checkbox" name="CaixaPerguntaCarros" class="caixaPerguntaCarros">
                         <div>
-                            <h4>Ford Ranger Storm</h4>
-                            <label for="CompararPreço">R$ 229.900,00</label>
+                        <h4>Ford Ranger Storm</h4>
+                        <label>R$ 229.900,00</label>
                         </div>
-                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações">
+                        <img src="anexo_desafio_htmlcss/img/info.png" alt="informações" class="info-icon">
+                        <div class="info-box">
+                            <table>
+                                <tr><th>Motor</th><td>2.5 Flex</td></tr>
+                                <tr><th>Potência</th><td>173 cv</td></tr>
+                                <tr><th>Consumo</th><td>8 km/l</td></tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
-        <div id="botão_Submit">
+        <div id="botão_Submit" style="bottom: auto;">
             <input type="submit" id="CompararPreço" value="Comparar Preços">
         </div>
     </main>
     <footer>
         <nav class="redesSociais">
-            <p>Redes Sociais</p>
-            <img src="anexo_desafio_htmlcss/img/facebook-50.png" alt="facebook">
-            <img src="anexo_desafio_htmlcss/img/youtube-squared-50.png" alt=" youtube">
-            <img src="anexo_desafio_htmlcss/img/instagram-logo-50.png" alt="instagram">
+            <p id="Redes_Sociais">Redes Sociais</p>
+            <img src="anexo_desafio_htmlcss/img/facebook-50.png" alt="facebook" class="Rede_Transferencia">
+            <img src="anexo_desafio_htmlcss/img/youtube-squared-50.png" alt=" youtube" class="Rede_Transferencia">
+            <img src="anexo_desafio_htmlcss/img/instagram-logo-50.png" alt="instagram" class="Rede_Transferencia">
         </nav>
         <img src="anexo_desafio_htmlcss/img/ford-96.png" alt="logo da ford">
-
-
-
-
+    </footer>
 </body>
 
 </html>

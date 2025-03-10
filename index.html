@@ -7,33 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="anexo_desafio_htmlcss/img/ford-96.png">
+    <meta name="theme-color" content="#1b357e">
     <title>ford</title>
 </head>
 <body>
     <header>
         <img src="anexo_desafio_htmlcss/img/logo-ford-256.png" alt="logo da ford" id="logoFord1">
         <nav class="itensMenu">
-        <a href="index.html" id="home">Home</a>
-        <a href="lançamento.html" id="lancamento">Lançamento</a>
-        <a href="contato.html" id="contato">Contato</a>
+            <a href="index.html" id="home">Home</a>
+            <a href="lançamento.html" id="lancamento">Lançamento</a>
+            <a href="contato.html" id="contato">Contato</a>
         </nav>
         <div id="juncao"></div>
     </header>
     <main>
-        <section>
-        <div id="separacao">
-    <img src="anexo_desafio_htmlcss/img/imagem_1.jpg" alt="carro a venda" id="Carro1">
-    <p >Está é a nova ford Ranger 2022. Verifque as novidades <a href="lançamento.html">aqui</a></p>
-        </div> 
-            <p id="textoDaFord">A Ford Ranger 2022 traz um design moderno e robusto, com melhorias em desempenho e tecnologia. Disponível em várias versões, incluindo motorização 2.2 e 3.2 turbo diesel, ela oferece excelente capacidade de carga e desempenho off-road, com tração 4x4 nas versões mais avançadas. No interior, o modelo conta com uma central multimídia SYNC 3, conectividade com smartphones e assistentes de segurança, como controle de estabilidade e monitoramento de ponto cego. A Ranger 2022 é ideal para quem busca um equilíbrio entre trabalho pesado e conforto diário.</p>
+        <section id="separacao">
+               <a href="lançamento.html"> <img src="anexo_desafio_htmlcss/img/imagem_1.jpg" alt="carro a venda" id="Carro1"></a>
+                <p>Está é a nova ford Ranger 2022. Verifique as novidades <a href="lançamento.html">aqui</a></p>
+                <label for="infoToggle" class="infoButton" style="cursor:pointer;">Saiba mais</label>
+            <input type="checkbox" id="infoToggle" style="display:none;">
+            <div class="info-box" id="infoBox">
+                <p>A Ford Ranger 2022 traz um design moderno e robusto, com melhorias em desempenho e tecnologia. Disponível em várias versões, incluindo motorização 2.2 e 3.2 turbo diesel, ela oferece excelente capacidade de carga e desempenho off-road, com tração 4x4 nas versões mais avançadas. No interior, o modelo conta com uma central multimídia SYNC 3, conectividade com smartphones e assistentes de segurança, como controle de estabilidade e monitoramento de ponto cego. A Ranger 2022 é ideal para quem busca um equilíbrio entre trabalho pesado e conforto diário.</p>
+            </div>
         </section>
     </main>
     <footer>
         <nav class="redesSociais">
-            <p>Redes Sociais</p>
-            <img src="anexo_desafio_htmlcss/img/facebook-50.png" alt="facebook">
-            <img src="anexo_desafio_htmlcss/img/youtube-squared-50.png" alt=" youtube">
-            <img src="anexo_desafio_htmlcss/img/instagram-logo-50.png" alt="instagram">
+            <p id="Redes_Sociais">Redes Sociais</p>
+            <img src="anexo_desafio_htmlcss/img/facebook-50.png" alt="facebook" class="Rede_Transferencia">
+            <img src="anexo_desafio_htmlcss/img/youtube-squared-50.png" alt=" youtube" class="Rede_Transferencia">
+            <img src="anexo_desafio_htmlcss/img/instagram-logo-50.png" alt="instagram" class="Rede_Transferencia">
         </nav>
         <img src="anexo_desafio_htmlcss/img/ford-96.png" alt="logo da ford">
     </footer>
