@@ -49,6 +49,7 @@ header{
 #home:hover{
     transition: 0s;
     border-top: 2px solid #1b357e;
+    transform: scale(1.2);
 }
 #home:active{
     color: #1351d8;
@@ -57,6 +58,7 @@ header{
 #contato:hover{
     transition: 0s;
     border-top: 2px solid #1b357e;
+    transform: scale(1.2);
 }
 #contato:active{
     color:#1351d8;
