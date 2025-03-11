@@ -22,7 +22,8 @@ header{
     position: fixed;
     background-color: white;
     box-shadow:  #1b357e 0px 0px 10px;
-    color: #1b357e;
+    color: #1351d8;
+    
 }
 #logoFord1{
     width: 10%;
@@ -47,11 +48,19 @@ header{
 #lancamento:hover{
     transition: 0s;
     border-top: 2px solid #1b357e;
+    transform: scale(1.2);
+}
+#lancamento:active{
+    color:#1351d8 ;
 }
 
 #contato:hover{
     transition: 0s;
     border-top: 2px solid #1b357e;
+    transform: scale(1.2);
+}
+#contato:active{
+    color: #1351d8;
 }
 #juncao{
     width: 10%;

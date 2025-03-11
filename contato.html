@@ -4,26 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="anexo_desafio_htmlcss/img/ford-96.png">
     <title>Contato</title>
 </head>
 <body>
-    <form>
-        Nome: <input type="text"><br><br>
-        E-mail: <input type="text"><br><br>
-        Telefone: <input type="tel"><br><br>
-        Tipo de Contato: <select name="tipo_de_contato" id="Contato">
-            <option value="N/D" id="seleção_Escolha">escolha</option>
+    <header>
+        <img src="anexo_desafio_htmlcss/img/logo-ford-256.png" alt="logo da ford" id="logoFord1">
+        <nav class="menu">
+            <a href="index.html" id="home">Home</a>
+            <a href="lançamento.html" id="lancamento">Lançamento</a>
+            <a href="contato.html" id="contato">Contato</a>
+        </nav>
+        <div id="juncao"></div>
+    </header>
+    <main>
+        <div style="display: flex; width: 100%; align-items: center; justify-content: center; "  id="texto_imagem">
+<div id="junçao">
+    <img src="anexo_desafio_htmlcss/img/XL Cabine.jpg" alt="Carro XL Cabine" id="CarroXL">
+</div>
+    <form action="index.html" method="get">
+ 
+        <section>
+            <fieldset>
+        <input type="text" class="Pergunta" placeholder="Nome" required><br>
+        <input type="text"class="Pergunta" placeholder="E-mail" required><br>
+        <input type="number" class="Pergunta" placeholder="CPF" required> <br>
+        <input type="tel"class="Pergunta" placeholder="Telefone"required><br>
+        <div>Motivo do Contato <select name="tipo_de_contato" id="motivo_Contato" required>
+            <option value="N/D" id="seleção_Escolha">escolha</option> 
             <option value="Elogio"class="seleção">Elogio</option>
             <option value="Reclamação" class="seleção">Reclamação</option>
             <option value="Solicitação" class="seleção">Solicitação</option>
-        </select>
+            </select></div>
+            <br>
+        <textarea id="opnião" placeholder="Motivo do Contato" rows="5" required></textarea>
+        <button  class="btn-loading" style="margin-top: 5%;"><span>Enviar</span></button>
+        </fieldset>
+        </section>
         
-
-        <button class="btn-loading"><span>Carregar</span>
-        
-
-
     </form>
+</div>
+
+</main>
+
     
+    <footer>
+        <nav class="redesSociais">
+            <p id="Redes_Sociais">Redes Sociais</p>
+            <a href="https://www.facebook.com/FordBrasil" class="Rede_Transferencia"><img src="anexo_desafio_htmlcss/img/facebook-50.png" alt="facebook" ></a>
+            <a class="Rede_Transferencia" href="https://youtube.com/@fordbrasil?si=W1D91LtbEl3ByRVx"><img src="/anexo_desafio_htmlcss/img/youtube-squared-50.png" alt="youtube" ></a>
+            <a class="Rede_Transferencia" href="https://www.instagram.com/ford?igsh=bWZiNWQ3eW1ycXpy" > <img src="anexo_desafio_htmlcss/img/instagram-logo-50.png" alt="instagram"></a>
+        </nav>
+        <img src="anexo_desafio_htmlcss/img/ford-96.png" alt="logo da ford">
+    </footer>
 </body>
 </html>
