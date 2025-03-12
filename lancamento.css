@@ -189,12 +189,85 @@ footer{
 }
 #Redes_Sociais{
     width: 50%;
-    font-size: 100%;
+    font-size: 1.1rem;
+}
+.redeSocial{
+    width: 90%;
+}
+#logoFord2{
+    width: 100%;
 }
 .Rede_Transferencia:hover{
     opacity: 0.5;
     transform:scale(0.9);
 }
-@media screen and (max-width: 500px){
-
+@media screen and (max-width: 550px) {
+    #logoFord1{
+        width: 17% ;
+    }
+    
 }
+@media (max-width: 768px) {
+    #Redes_Sociais{
+     font-size: 0.8rem;
+    }
+        .menu{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 300px) {
+    .menu{
+        font-size: 0.5em;
+    }
+    
+}
+@media screen and (max-height: 780px){
+    main{
+        margin-bottom: 18%;
+    }
+    .carrosAmostra{
+        margin-bottom: 5%;
+        
+    }
+    #secao_video{
+        height: 20vh ;
+    }
+}
+@media screen and (max-height: 711px) {
+    main{ 
+        margin-bottom: 30%;
+    }
+} 
+@media screen and (max-height: 932px) {
+    #secao_video{
+        height: 20vh;
+    }
+    main{
+        margin-bottom: 10%;
+    }
+}
+@media screen and (max-height: 750px) {
+    main{
+        margin-bottom: 10vh;
+    }
+}
+@media screen and (max-height: 880px ) {
+    main{
+        margin-bottom: 10vh;
+    }
+    #imagens_e_Texto{
+        margin-bottom: 5vh;
+    }
+    
+}
+
+@media screen and (max-height:600px) {
+    main{
+        margin-bottom: 15vh;
+        
+    }
+    #secao_video{
+        height: 50%;
+    }
+}
+    

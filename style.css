@@ -38,6 +38,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     flex: 1;
+    width: 50%;
 
 }
 #home{
@@ -77,15 +78,17 @@ main{
 }
 .info-box {
     display: none;
-    border: 1px solid #000;
+    border: 1px solid #1b357e00;
+    box-shadow: #1b357e 0px 0px 10px;
     padding: 1%;
-    background-color: #f0f0f0;
+    background-color: #f0f0f034;
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     font-size: 80%;
     min-width: 80vw;
+    color:#1351d8;
 }
 
 #infoToggle:checked ~ .info-box {
@@ -124,20 +127,66 @@ footer{
 .redesSociais{
     display: flex;
     align-items: center;
+    
 }
 .Rede_Transferencia{
     width: 20%;
 }
 #Redes_Sociais{
     width: 50%;
-    font-size: 100%;
+    font-size: 1.1rem;
 }
 .Rede_Transferencia:hover{
     opacity: 0.5;
     transform:scale(0.9);
 }
+.redeSocial{
+    width: 90%;
+}
+#logoFord2{
+    width: 100%;
+}
+@media (max-width: 768px) {
+    #Redes_Sociais{
+     font-size: 0.8rem;
+    }
+        .itensMenu{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 300px) {
+    .itensMenu{
+        font-size: 0.5em;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    #logoFord1{
+        width: 17% ;
+    }
+
+    
+}
 @media screen and (max-width: 600px) {
 #info-box{
     width: 100vw;
 }
+}
+@media screen and (max-height: 650px) {
+    .info-box{
+        top: 10% ;
+        left: 50% ;
+        width: 100%;
+
+    }
+}
+@media screen and (max-height: 620px) {
+    .info-box{
+        top: 8%;
+    }
+    
+}
+@media screen and (max-width: 570px) {
+
 }
