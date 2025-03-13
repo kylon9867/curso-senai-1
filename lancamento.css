@@ -16,8 +16,9 @@ body{
 }
 
 header{
+    padding-left: 1%;
     border-bottom: 1px solid black; 
-    width: 100%;  
+    width: 99%;  
     display: flex;
     flex-wrap: wrap;
     align-items: center; 
@@ -92,6 +93,7 @@ main{
     margin: 0;
     width: 100%;
     height: 100%;
+    aspect-ratio: 16/9;
 }
 
 #imagens_e_Texto{
@@ -103,6 +105,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;    
+    
 }
 
 #CarroVenda{
@@ -114,8 +117,9 @@ main{
 }
 
 .fotos_Carros{
-    width: 80%;
+    width: 100%;
     display: flex;
+    align-self: center;
 }
 
 .Descricao{
@@ -157,13 +161,52 @@ label{
 .info-icon:hover + .info-box {
     display: block;
 }
-#CompararPreço{
-    border:solid rgb(16, 16, 232);
-    border-radius: 8%;
-    background-color: rgb(16, 16, 232);
+#button-envio {
+    display: inline-block;
+    padding: 1vh 2vh;
+    font-size: 2vh;
+    font-weight: bold;
+    color:  #1351d8;
+    background-color: #fff;
+    border: 2px solid  #1351d8;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 15vh;
+    top: auto;
+
+}
+
+#button-envio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:  #1351d8;
+    transition: width 0.4s ease;
+    z-index: 0;
+    color: #fff;
+}
+
+#button-envio:hover::before {
+    width: 100%;
     color: white;
-    padding:1em;
+}
+
+#button-envio span {
+    position: relative;
+    z-index: 1;
     
+}
+#button-envio:hover{
+    color: #fff;
+}
+#button-envio span:hover{
+    color: #fff;
+    padding:2px ;
 }
 
 #botão_Submit{
@@ -183,19 +226,28 @@ footer{
 .redesSociais{
     display: flex;
     align-items: center;
+    gap: 2%;
+    
 }
 .Rede_Transferencia{
-    width: 20%;
+    width: 15%;
+
 }
 #Redes_Sociais{
-    width: 50%;
-    font-size: 1.1rem;
+    font-size: 100%;
 }
 .redeSocial{
-    width: 90%;
-}
-#logoFord2{
     width: 100%;
+}
+#LogoFord2{
+    padding: 0.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logoFord3{
+    align-items: center;
+    width: 90%;
 }
 .Rede_Transferencia:hover{
     opacity: 0.5;
@@ -270,4 +322,11 @@ footer{
         height: 50%;
     }
 }
+@media screen and (max-width: 800px) {
+    #secao_video{
+        height: 25vh;
+
+    }
     
+}
+

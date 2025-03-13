@@ -10,8 +10,9 @@ body{
 }
 /* header */
 header{
+    padding-left: 1%;
     border-bottom: 1px solid black; 
-    width: 100%;  
+    width: 99%;  
     display: flex;
     flex-wrap: wrap;
     align-items: center; 
@@ -113,6 +114,7 @@ legend{
     width: 90%;
     height: 2vh;
     opacity: calc(0.8);
+    padding-left: 3%;
 }
 #motivo_Contato{
     border-radius: 20px;
@@ -126,9 +128,10 @@ legend{
     border: #1b357e solid 1px;
     opacity: calc(0.8);
     resize: none;
+    padding-left: 3% ;
 }
 
-.btn-loading {
+#button-envio {
     display: inline-block;
     padding: 1vh 2vh;
     font-size: 2vh;
@@ -145,7 +148,7 @@ legend{
 
 }
 
-.btn-loading::before {
+#button-envio::before {
     content: "";
     position: absolute;
     top: 0;
@@ -158,20 +161,20 @@ legend{
     color: #fff;
 }
 
-.btn-loading:hover::before {
+#button-envio:hover::before {
     width: 100%;
     color: white;
 }
 
-.btn-loading span {
+#button-envio span {
     position: relative;
     z-index: 1;
     
 }
-.btn-loading:hover{
+#button-envio:hover{
     color: #fff;
 }
-.btn-loading span:hover{
+#button-envio span:hover{
     color: #fff;
     padding:2px ;
 }
@@ -191,23 +194,31 @@ footer{
 .redesSociais{
     display: flex;
     align-items: center;
+    gap: 2%;
+    
 }
 .Rede_Transferencia{
-    width: 20%;
+    width: 15%;
 }
 #Redes_Sociais{
-    width: 50%;
-    font-size: 1.1rem;
+    font-size: 100%;
 }
 .Rede_Transferencia:hover{
     opacity: 0.5;
     transform:scale(0.9);
 }
 .redeSocial{
-    width: 90%;
-}
-#logoFord2{
     width: 100%;
+}
+#LogoFord2{
+    padding: 0.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logoFord3{
+    align-items: center;
+    width: 90%;
 }
 @media (max-width: 768px) {
     #Redes_Sociais{

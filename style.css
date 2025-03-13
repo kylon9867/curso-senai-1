@@ -13,6 +13,7 @@ body{
 
 /* header */
 header{
+    padding-left: 1%;
     border-bottom: 1px solid  #1b357e; 
     width: 100%;  
     display: flex;
@@ -74,40 +75,32 @@ main{
     margin-top: 3%;
     margin-bottom: 3%;
     display: flex;
-    justify-content: center;
-}
-.info-box {
-    display: none;
-    border: 1px solid #1b357e00;
-    box-shadow: #1b357e 0px 0px 10px;
-    padding: 1%;
-    background-color: #f0f0f034;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    font-size: 80%;
-    min-width: 80vw;
-    color:#1351d8;
-}
+    height: 100vh;
 
-#infoToggle:checked ~ .info-box {
-    display: block;
 }
 #Carro1{
    width: 100%; 
 }
 #separacao{
-max-width: 70%;
+min-width: 60%;
 text-align: center;
 color: #1b357e;
-align-items: center;
+
+}
+#textoimagem{
+    display: flex;
+    align-items: center;
+    font-size: 90%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 #textoDaFord{
      font-size: 90%;
      flex-grow: 1;
      overflow-wrap:break-word;
      color: #1b357e;
+     text-align: justify;
+     padding-left: 2%;
 }
 #infoCarro{
     font-size: 90%;
@@ -119,7 +112,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     bottom: 0%;
-    position: fixed;
+   
     width: 100%;
     color: white;
 }
@@ -127,24 +120,33 @@ footer{
 .redesSociais{
     display: flex;
     align-items: center;
+    gap: 2%;
     
 }
 .Rede_Transferencia{
-    width: 20%;
+    width: 15%;
+
 }
 #Redes_Sociais{
-    width: 50%;
-    font-size: 1.1rem;
+    font-size: 100%;
 }
 .Rede_Transferencia:hover{
     opacity: 0.5;
     transform:scale(0.9);
 }
 .redeSocial{
-    width: 90%;
-}
-#logoFord2{
     width: 100%;
+    align-items: center;
+}
+#LogoFord2{
+    padding: 0.2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logoFord3{
+    align-items: center;
+    width: 90%;
 }
 @media (max-width: 768px) {
     #Redes_Sociais{
@@ -152,6 +154,12 @@ footer{
     }
         .itensMenu{
         font-size: 0.8em;
+    }
+    #textoimagem{
+        flex-direction: column;
+    }
+    #separacao{
+        margin-bottom: 5%;
     }
 }
 @media screen and (max-width: 300px) {
@@ -187,6 +195,10 @@ footer{
     }
     
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-height: 640px) {
+    main{
+       padding-top: 29%;
+       padding-bottom: 9%;
+    }
 
 }
