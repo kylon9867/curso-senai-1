@@ -256,7 +256,7 @@ footer{
 }
 @media screen and (max-height:460px) {
     main{
-        height:140vh
+        height:140vh;
     }
     
 }
@@ -267,9 +267,7 @@ footer{
     
 }
 @media screen and (max-height: 310px) {
-    header{
 
-    }
     main{
         height:200vh ;
     }
