@@ -329,4 +329,13 @@ footer{
     }
     
 }
+@media screen and (max-height: 932px) and (max-width: 430px ) {
+    main{
+        padding-bottom: 3%;
+    }
+    .carrosAmostra{
+        padding-bottom: 2%;
+    }
+    
+}
 
